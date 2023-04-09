@@ -45,7 +45,7 @@ function showWeatherInCurrentPlace(position) {
   const latitude = position.coords.latitude;
   const longtitude = position.coords.longitude;
   const key = "bc0f4a715b0f4da387a93332230204";
-  const url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${latitude},${longtitude}&aqi=yes`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${latitude},${longtitude}&aqi=yes`;
   fetch(url)
     .then((resp) => resp.json())
     .then((data) => {
